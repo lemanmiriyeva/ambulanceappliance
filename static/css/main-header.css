@@ -1,0 +1,225 @@
+
+.main-header {
+    background-image: url('../images/home.jpg');
+    animation: changeBg 30s infinite; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 700px;
+
+}
+
+@media(max-width:575px){
+      .main-row{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    } 
+    
+}
+@media(min-width:992px){
+    .mobile-form-div{
+        display: none !important;
+    }
+}
+@media(max-width:991px){
+    .header-text-main{
+        margin-top: 80% !important;
+    }
+    .main-header{
+        height: auto !important;
+        /* padding: 50% 0 30% 0 !important; */
+        
+
+    }
+    .form-div{
+        display: none !important;
+    }
+    .request-section{
+        display: none !important;
+    }
+    .header-text-main{
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: column;
+            justify-content: center !important;
+       }
+       .header-text-main h1{
+        text-align: center !important;
+       }
+       
+    .form-div{
+        height: unset !important;
+        margin-left: 2%;
+    }
+    .form-div form{
+        height: unset !important;
+    }
+    .header-text-main{
+        background-color: transparent !important;
+    }
+    .header-text-main h1{
+        font-size: 30px !important;
+
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .mobile-form-div form{
+        width: 60% !important; 
+       }
+       .mobile-form-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+}
+.mobile-form-div{
+    background-color: #192437;
+}
+.mobile-form-div h2{
+    /* font-size: 40px !important; */
+    color: #fff !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    font-family: 'Nunito',sans-serif !important;
+}
+
+.mobile-form-div input::placeholder{
+    font-size: 14px !important;
+}
+.form-div{
+    background-color: rgba(255, 255, 255, 0.9)
+    ;
+}
+.form-div h3{
+    /* font-size: 40px !important; */
+    color: #192437 !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    font-family: 'Nunito',sans-serif !important;
+}
+
+.form-div input::placeholder{
+    font-size: 14px !important;
+}
+.header-text-main h6 {
+    color: #ff5316;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.header-text-main h1 {
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+
+.header-text-main p {
+    font-size: 17px;
+    color: #fff;
+}
+.header-text-about h6 {
+    color: #ff5316 !important;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.header-text-about h1 {
+    font-weight: 900;
+    font-size: 55px;
+    color: #192437 !important;
+}
+
+.header-text-about p {
+    font-size: 17px;
+    color: #727272 !important;
+}
+
+.btn-more {
+    background-color: #ff5316;
+    font-size: 16px;
+    color: #fff !important;
+    font-weight: 500;
+    border-radius: 0 !important;
+}
+
+.btn-more:hover{
+    background-color: #192437;
+    transition: all .3s ease-in-out;
+}
+
+.request-section {
+    background: #192437;
+}
+
+
+@media(max-width:576px) {
+
+    .header-text h1 {
+        font-size: 30px !important;
+    }
+}
+
+.btn-request {
+    background-color: #ff5316;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 0 !important;
+    border: none}
+
+.request-section h1 {
+    color: #fff;
+    font-weight: 700 !important;
+}
+
+.request-section p {
+    color: #fff;
+    font-size: 17px;
+}
+@media(min-width:992px){
+    .header-text-main{
+        margin-top: 20%;
+    }
+}
+
+/* .top-services img{
+    height: 150px !important;
+} */
+.top-mobile-services{
+    display: none;
+}
+/* .top-services img{
+    width: 70% !important;
+} */
+@media(max-width:992px){
+    .top-services{
+        display: none !important;
+    }
+    .top-mobile-services{
+        display: block;
+        background: #192437;
+    }
+}
+@media(max-width:576px){
+    .services-img{
+        width: 30% !important;
+        border-radius: 10px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+}
+.services-img{
+    
+    background: #fff;
+}
+@media(min-width:576px) and (max-width:992px){
+    .services-img{
+        width: 24% !important;
+        border-radius: 10px;
+        height: 60px;
+    }
+}

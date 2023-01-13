@@ -1,0 +1,178 @@
+.header-text3 h6 {
+    color: #ff5316;
+}
+
+.header-text3 h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #192437;
+}
+
+.services-section {
+    background-color: #F9F9F9;
+}
+
+
+
+.btn-more {
+    background-color: #ff5316;
+    color: #fff !important;
+    border-radius: 20px;
+    
+}
+
+.btn-more:hover {
+    background-color: #192437;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width:1440px) {
+    .main-header {
+
+        background-position: top;
+    }
+}
+
+.widget-section {
+    background-color: #192437;
+    color: #fff !important;
+
+}
+
+.widget-element h1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.widget-element {
+    text-align: center;
+    border: 1px solid #bbbbbbfd;
+    border-radius: 10px;
+}
+
+@media(max-width:767px) {
+    
+    .widget-element{
+        display: flex;
+        flex-direction: column !important;
+        border: none !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .widget-element i{
+        margin-bottom: 15% !important;
+        font-size: 40px !important;
+    }
+}
+
+@media(max-width:992px) {
+    .widget-element h1 {
+        font-size: 25px !important;
+    }
+    
+}
+@media(min-width:767px) and (max-width:992px) {
+    .widget-element i{
+        font-size: 40px !important;
+    }
+}
+.widget-element i{
+    color: #ff5316;
+    font-size: 56px;
+}
+.service-overlay-outer {
+    position: relative;
+    width: 90%;
+    max-width: 400px; 
+    margin: auto;
+    overflow: hidden; 
+    
+}
+
+.service-overlay-inner {
+    background: rgba(255, 83, 22, 1);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.service-card:hover .service-overlay-inner {
+    opacity: 1;
+}
+@media(max-width:576px){
+    .service-card{
+        height: 150px !important; 
+    }
+    .overlay-detail{
+        height: 150px !important;
+    }
+    .header-text3 h1{
+        font-size: 30px !important;
+    }
+}
+.service-card{
+    height: 250px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.img-service{
+    width: 100%;
+    position: absolute;z-index: -1;
+    filter: brightness(30%);
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+
+.service-content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.service-overlay-outer:hover .service-content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.service-content-details h4 {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.service-content-details p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.service-fadeIn_bottom {
+    top: 80%;
+}
+.service-card h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+@media(max-width:420px){
+    .service-card h4{
+        font-size: 15px !important;
+    }
+}

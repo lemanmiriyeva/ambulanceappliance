@@ -1,0 +1,44 @@
+@media(max-width:400px) {
+    .about-section {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media(min-width:400px) and (max-width:577px) {
+    .about-section {
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media(max-width:768px) {
+
+    .why-image img {
+        height: 400px !important;
+    }
+
+    .why-image,
+    .about-image {
+        margin-bottom: 10%;
+    }
+}
+
+.about-image img,
+.why-image img {
+
+    object-fit: cover;
+
+}
+
+.about-image {
+    height: 100%;
+}
+@media(max-width:600px){
+    .about-image img {
+        height: 200px !important;
+    }
+}
+.about-image img {
+    height: 400px;
+}

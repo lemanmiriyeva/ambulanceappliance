@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+}
+
+html,
+body {
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #4d68ff !important;
+}
+
+.form-control:hover {
+    border: 1px solid #333;
+}
+
+@media(min-width:1200px) {
+    .container-fluid {
+        width: 90% !important;
+    }
+}
+
+@media(min-width:1900px) {
+    .container-fluid {
+        width: 70% !important;
+    }
+}
+
+.owl-dots {
+    display: none !important;
+}
+
+img {
+    object-fit: cover;
+}
+.btn{
+    outline: none !important;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+@media(max-width:992px){
+    .navbar-container-fluid{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}

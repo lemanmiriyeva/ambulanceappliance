@@ -1,0 +1,37 @@
+.btn-subscribe {
+    border: none !important;
+    background-color: #ff5316;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.footer {
+    background-color: #192437;
+    color: #F9F9F9 !important;
+}
+
+.footer a {
+    color: #F9F9F9 !important;
+}
+
+.footer a:hover {
+    color: #ff5316 !important;
+    transition: all .5s ease-in-out;
+}
+
+@media(min-width:400px) {
+    .social-footer-icons {
+        width: 60%;
+    }
+}
+
+.icon {
+    background-color: #121b2b;
+}
+.first-element i{
+    color: #ff5316 !important;
+    font-size: 30px;
+    margin-right: 10%;
+}

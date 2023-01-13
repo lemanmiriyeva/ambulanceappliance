@@ -1,0 +1,81 @@
+.title-divider {
+    width: 20%;
+    border: 2px solid #ff5316;
+    height: 2px;
+    background-color: #ff5316;
+}
+
+.title-section {
+    background-image: url("https://templatekit.kulokale.com/plumbtion/wp-content/uploads/sites/7/2022/01/bryan-colosky-3ChXTytXDUI-unsplash-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff !important;
+    opacity: 1;
+}
+
+.title-section .overlay {
+    background-color: rgba(18, 27, 43, .9);
+
+}
+
+label {
+    font-weight: 500;
+    color: #192437;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+.btn-send {
+    background-color: #ff5316;
+    color: #fff !important;
+    font-weight: 500;
+    border-radius: 0 !important;
+}
+
+.btn-send:hover {
+    background-color: #192437;
+    transition: all .3s ease-in-out;
+}
+
+.contact-section-element {
+    border-bottom: 1px solid #E6E6E6;
+    width: 90% !important;
+}
+
+.contact-section-element small {
+    font-weight: 500;
+}
+
+.contact-section-last-element {
+    width: 90% !important;
+}
+
+.contact-section-item {
+    color: #192437 !important;
+    font-weight: 500;
+}
+
+.contact-info-small-header {
+    color: #ff5316;
+    font-weight: 500;
+}
+
+.contact-information h1 {
+    color: #192437;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.contact-information p {
+    font-size: 17px;
+    color: #727272;
+    width: 90%;
+
+}
+@media(max-width:991px){
+    .title-section{
+        margin-top: 10% !important;
+    }
+}

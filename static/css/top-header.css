@@ -1,0 +1,95 @@
+
+.top-main-header {
+    border-bottom: 1px solid lightgray;
+    z-index: 1000;
+}
+
+@media(max-width:767px) {
+    .working-time {
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .top-header {
+        font-size: 14px;
+    }
+
+    .row-social {
+        justify-content: center !important;
+    }
+}
+
+@media(min-width:1200px) {
+
+    .logo-section {
+        width: 20% !important;
+    }
+}
+
+.contact-icons img {
+    width: 40px;
+}
+.contact-info-section i{
+    color: #ff5316;
+    font-size: 36px;
+}
+@media(max-width:992px){
+    .contact-info-section{
+        justify-content: start !important;
+    }
+}
+.call-section{
+    background-color: #0971ce;
+}
+.call-section span{
+    font-size: 25px;
+}
+.call-section span:nth-child(2){
+    font-weight: 700;
+}
+.call-icon{
+    background: #192437;
+}
+.call-icon i{
+    font-size: 40px;
+    font-weight: 500;
+}
+.trin-trin
+{
+    animation-name: trin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes trin {
+
+    from {
+        transform:rotate3d(0, 0, 1, 0deg);
+    }
+    20%, 32%, 44%, 56%, 68% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    23%, 35%, 47%, 59%, 71% {
+        transform: rotate3d(0,0,1,15deg);
+    }
+    26%, 38%, 50%, 62%, 74% {
+        transform: rotate3d(0,0,1,0deg);
+    }
+    29%, 41%, 53%, 65%, 77% {
+        transform: rotate3d(0,0,1,-15deg);
+    }
+    80% {
+        transform:rotate3d(0, 0, 1, 0deg);
+    }
+
+}
+@media(max-width:992px){
+    .top-main-header{
+        display: none;
+    }
+}
+.contact-info-text-dark{
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: 500;
+}

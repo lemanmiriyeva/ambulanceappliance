@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Contact</title>
+{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'css/partner-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/top-header.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<!--Title section-->
+
+<div class="title-section w-100">
+    <div class="overlay py-5">
+        <div class="container-fluid py-3">
+            <h1 class="mb-3">Contact us</h1>
+            <div class="title-divider mb-4"></div>
+            <span class="title-text">For inquiries, comments, or to schedule a service appointment, you can contact us
+                using the form below.
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<!--Contact Section -->
+
+<div class="contact-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+    <div class="container-fluid">
+        <div class="row pb-5">
+            <div class="col-md-5 col-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 contact-information pt-5 mt-5">
+                <span class="contact-info-small-header">CONTACT INFO</span>
+                <h1 class="mb-3 mt-3">Lets Get In Touch</h1>
+                <p class="mb-4">Looking for “appliance service near me”? We are always on the phone to answer all your
+                    questions and solve your household appliance concerns. Our technicians are ready to start the repair
+                    process immediately as soon as you make an appointment.</p>
+                <div class="d-flex align-items-center justify-content-start w-100 contact-section-element py-4 mb-2">
+                    <i class="fa fa-envelope-o" style="font-size: 40px;color: #ff5316;margin-right: 5%;"></i>
+                    <div class="d-flex flex-column">
+                        <small class="text-muted mb-2">Email address</small>
+                        <a href="mailto:" class="contact-section-item">sales@ambulanceappliance.com</a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-start w-100 contact-section-element py-4 mb-2">
+                    <i class="fa fa-phone" style="font-size: 40px;color: #ff5316;margin-right: 5%;"></i>
+                    <div class="d-flex flex-column">
+                        <small class="text-muted mb-2">Phone number</small>
+                        <a href="tel:(832)856-3222" class="contact-section-item">(832) 856-3222</a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-start w-100 contact-section-last-element py-4">
+                    <i class="fa fa-map-marker" style="font-size: 40px;color: #ff5316;margin-right: 5%;"></i>
+                    <div class="d-flex flex-column">
+                        <small class="text-muted mb-2">Cities Served</small>
+                        <a href="" class="contact-section-item">Houston, Texas</a>
+                        <a href="" class="contact-section-item">Cypress, Texas</a>
+                        <a href="" class="contact-section-item">Katy, Texas</a>
+                        <a href="" class="contact-section-item">Richmond, Texas</a>
+                        <a href="" class="contact-section-item">Spring, Texas</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-7 col-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 contact-form pt-5 mt-5">
+                
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                            <label for="first_name" class="mb-2">First Name</label>
+                            
+                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your name" type="text">
+                        </div>
+                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                            <label for="first_name" class="mb-2">Last Name</label>
+                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your last name" type="text">
+                        </div>
+                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                            <label for="first_name" class="mb-2">Email Address</label>
+                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your email" type="text">
+                        </div>
+                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                            <label for="first_name" class="mb-2">Phone Number</label>
+                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your phone number" type="text">
+                        </div>
+                    </div>
+                    <label for="textarea" class="mb-2">Message</label>
+                    <textarea name="textarea" id="" cols="30" rows="7" class="py-3 px-3 mb-4 w-100 form-control"
+                                placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="btn btn-send py-3 px-5">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Google Map Section-->
+<div class="map-section bg-white pt-5">
+    <div class="w-100">
+        <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.3333111938955!2d-95.49185260000002!3d30.0272941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640ccbb89f90f11%3A0x426a98220569c965!2zNTMxMSBOb2Rhd2F5IExuLCBTcHJpbmcsIFRYIDc3Mzc5LCBBbWVyaWthIEJpcmzJmcWfbWnFnyDFnnRhdGxhcsSx!5e0!3m2!1saz!2s!4v1670584115264!5m2!1saz!2s"
+            height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+{% block js %}
+
+<script src="{% static 'js/filter.js' %}"></script>
+
+{% endblock %}

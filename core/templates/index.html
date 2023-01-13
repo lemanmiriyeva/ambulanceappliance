@@ -1,0 +1,938 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Ambulance Appliance - Best Repair Services</title>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/about-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<link rel="stylesheet" href="{% static 'css/main-header.css' %}">
+<link rel="stylesheet" href="{% static 'css/why-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/services-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/recent-works-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/review-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'css/provide-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/partner-section.css' %}">
+<link rel="stylesheet" href="{% static 'css/top-header.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<!--Block content-->
+
+
+<!--main section-->
+    
+<div class="main-header w-100 d-flex align-items-center justify-content-center">
+
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="row main-row d-flex align-items-center justify-content-between">
+            <div class="col-md-11 col-12 col-sm-11 col-lg-8 col-xl-8 col-xxl-7 header-text-main">
+                <h1 class="mb-4">Best Appliance Repair Solution with Quality Work</h1>
+                <a href="tel:(832) 856-3222" class="btn btn-more mb-4 py-3 px-4">CALL US NOW</a>
+                <div class="top-services d-flex align-items-center justify-content-start mt-5 w-100">
+                    <div class="d-flex align-items-center justify-content-start" style="border-radius: 10px;width: 20%;margin-right: 10px;">
+                        <a href=""><img  style="height: 60px; border-radius: 10px;object-fit: cover;"src="https://ultrafixappliance.com/assets/img/ul-google.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="border-radius: 10px;width: 20%;margin-right: 10px;object-fit: cover;"><a href=""><img  style="height: 60px; border-radius: 10px;"src="https://ultrafixappliance.com/assets/img/ul-yelp.webp" alt="" class="w-100"></a></div>
+                    <div class="d-flex align-items-center justify-content-start" style="border-radius: 10px;width: 25%;margin-right: 10px;object-fit: cover;"><a href=""><img style="height: 60px; border-radius: 10px;" src="https://ultrafixappliance.com/assets/img/ul-best-pick.webp" alt="" class="w-100"></a></div>
+                    <div class="d-flex align-items-center justify-content-center bg-white" style="border-radius: 10px;width: 25%;object-fit: contain;"><a href="">
+                        <img  style="height: 60px; border-radius: 10px;object-fit: cover;"src="https://cutewallpaper.org/24/homeadvisor-logo-png/homeadvisor-black-horizontal-logo-transparent-png-stickpng.png" alt="" class="w-100"></a></div>
+                </div>
+
+            </div>
+
+            <!--Header form section-->
+          
+            </div>
+            <div class="col-md-7 col-10 col-sm-7 col-lg-4 col-xl-4 col-xxl-4 form-div py-5 px-4" style="height: 620px;">
+                <h3 class="mb-3">Get Free Quote</h3>
+               <form action="" method="post" style="height: 500px;" class="w-100 d-flex align-items-center justify-content-between flex-column">                
+                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-name" placeholder="Name">
+                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-phone" placeholder="Phone">
+                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-email" placeholder="Email">
+                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-address" placeholder="Adress">
+                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-zipcode" placeholder="Zip Code">
+                <button id="contact-form-button" class="btn btn-success w-100 py-2" type="submit">Get a quote</button>
+               </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="top-mobile-services w-100 py-3 px-2">
+    <div class="images d-flex align-items-center justify-content-between" style="flex-wrap: wrap;">
+     <img src="https://ultrafixappliance.com/assets/img/ul-google.webp" alt="" class="services-img">
+     <img src="https://ultrafixappliance.com/assets/img/ul-best-pick.webp" alt="" class="services-img">
+     <img src="https://ultrafixappliance.com/assets/img/ul-yelp.webp" alt="" class="services-img">
+     <img src="https://cutewallpaper.org/24/homeadvisor-logo-png/homeadvisor-black-horizontal-logo-transparent-png-stickpng.png" alt="" class="services-img">
+    </div>
+ </div>
+<div class="col-12 col-sm-12 mobile-form-div py-5 px-4" style="height: 620px;">
+    <h2 class="mb-3">Get Free Quote</h2>
+   <form action="" method="post" style="height: 500px;" class="w-100 d-flex align-items-center justify-content-between flex-column">
+    <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-name" placeholder="Name">
+    <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-phone" placeholder="Phone">
+    <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-email" placeholder="Email">
+    <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-address" placeholder="Adress">
+    <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-zipcode" placeholder="Zip Code">
+    <button id="contact-form-button" class="btn btn-success w-100 py-2" type="submit">Get a quote</button>
+   </form>
+
+</div>
+<div data-aos="fade-down" class="d-none request-section w-100 py-5">
+    <div class="container-fluid">
+        <div class="row d-flex flex-column align-items-center justify-content-center">
+            <h1>Request Services Today!</h1>
+            <p>For prompt, professional appliance repair services, request a call. We will be happy to call you back.</p>
+            <form action="" class=" w-100" method="post">
+                {% csrf_token %}
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-4">
+                        <input type="text" placeholder="Enter name" class="mb-4 w-100 form-control py-3">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" placeholder="Enter phone" class="mb-4 w-100 form-control py-3">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="mb-4 w-100 py-3 px-3 btn-request" type="submit">Request</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<!-- End of main section-->
+
+<!--About section-->
+
+<div class="about-section w-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+    <div class="container-fluid">
+        <div class="row py-5 about-row">
+            <div class="col-md-12 col-sm-12 col-12 col-lg-6 col-xl-6 col-xxl-6 about-image">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-md-6 col-sm-6 col-6 col-lg-6 col-xxl-6">
+                        <img class="w-100" src="{% static 'images/about_section_first.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-6 col-lg-6 col-xxl-6 secondimg">
+                        <img class="w-100" src="{% static 'images/about_us.jpg' %}" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 header-text-about">
+                <h6 class="mb-4">ABOUT US</h6>
+                <p class="mb-4">Our highly qualified service technicians will diagnose your problem quickly. Once we
+                    know your problem, we can often repair it during the initial visit. In the unfortunate case that we
+                    need to order a part or parts, we will place that order same-day and schedule a return trip for
+                    repair. </p>
+                <p>
+                    We have been providing top service! See just how our Ambulance Appliance Repair Service can better
+                    your life today!
+                </p>
+                <a href="" class="btn btn-more mb-4 py-3 px-4">Learn more</a>
+                </h4>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="services-section w-100" id="services">
+    <div class="container-fluid  services" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1000">
+        <div class="row pt-5 d-flex why-row d-flex justify-content-between">
+
+            <div class="col-md-12 col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12 header-text3">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-9">
+                        <h6 class="mb-4">WHAT WE OFFER</h6>
+                        <h1 class="mb-4">Appliance Repair We Offer</h1>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center justify-content-end d-none">
+                        <a href="" class="btn btn-more mb-4 py-3 px-4">All Services</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row py-4">
+            
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/refrigerator.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Refrigerator</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/refrigerator.webp' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/refrigerator.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Refrigerator</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/ice-machine.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Ice Machine</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/ice-machine.jpeg' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail  " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/ice-machine.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Ice Machine</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/washer.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Washer</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/washer.jpg' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/washer.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Washer</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/dryer.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Dryer</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/dryer.webp' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/dryer.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Dryer</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/dishwasher.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Dishwasher</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/dishwasher.jpg' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/dishwasher.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Dishwasher</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/oven.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Oven</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/oven.jpg' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/oven.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Oven</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100 overlay-detail  " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/cooktop.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Cooktop</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/cooktop.jpg' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail  " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/cooktop.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Cooktop</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100 overlay-detail  " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/microwave.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Microwave</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/microwave.jpg' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail  " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/microwave.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Microwave</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="service-card service-overlay-outer w-100">
+                    <div class="service-overlay-inner">
+                        <div class="d-flex align-items-center flex-column justify-content-center w-100 overlay-detail  " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/minibar.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Wine Cooler</h4>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/services/wine-cooler.png' %}"
+                        class="img-service" />
+                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail " style="height: 250px;">
+                            <img class="mb-3" src="{% static 'images/icons/minibar.png' %}" style="width: 44px;height: 44px;" alt="">
+                            <h4 class="text-center text-white">Wine Cooler</h4>
+                        </div>
+                        
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<div class="widget-section w-100 py-4">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-3 col-sm-4 col-4 d-flex align-items-center justify-content-evenly widget-element py-2">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <div class="header">
+                    <h1>500+</h1>
+                    <span>Happy customers</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-3 col-sm-4 col-4 d-flex align-items-center justify-content-evenly widget-element py-2">
+                <i class="fas fa-award"></i>
+                <div class="header">
+                    <h1>4.8 / 5</h1>
+                    <span>Customers rated</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-xxl-3 col-lg-3 col-md-3 col-sm-4 col-4 d-flex align-items-center justify-content-evenly widget-element py-2">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <div class="header">
+                    <h1>3+</h1>
+                    <span>Years of experience</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="works-section w-100">
+    <div class="container-fluid work-container">
+        <div class="row d-flex flex-column align-items-center justify-content-center text-center work-header pt-5">
+            <h6 class="mt-5">FEATURED PROJECTS</h6>
+            <h1 class="mb-3">Our Recent Works</h1>
+            <p>We provide reliable Appliance Repair Services for all brands and types of Appliances!
+                Wherever you are, Whenever you need, We will be there for you.
+            </p>
+        </div>
+        <div class="button-group filters-button-group">
+            <button class="button is-checked" data-filter=".main">All Projects</button>
+            <button class="button" data-filter=".refrigerator">Refrigerator</button>
+            <button class="button" data-filter=".dishwasher">Dishwasher</button>
+            <button class="button" data-filter=".cooktop">Cooktop</button>
+            <button class="button" data-filter=".washer">Washer</button>
+            <button class="button" data-filter=".microwave">Microwave</button>
+        </div>
+
+        <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid" data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="1000" style="background-color: transparent !important;">
+
+            <article class="cooktop main overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/cooktop/cooktop.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Cooktop Repairs</h3>
+                </div>
+            </article>
+            <article class="cooktop overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/cooktop/cooktop_2.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Cooktop Repairs</h3>
+                </div>
+            </article>
+            <article class="cooktop emergency overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/cooktop/cooktop_3.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Cooktop Repairs</h3>
+                </div>
+            </article>
+
+            <article class="washer overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/washer/washer_1.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Washer Repairs</h3>
+                </div>
+            </article>
+            <article class="washer overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/washer/washer_2.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Washer Repairs</h3>
+                </div>
+            </article>
+            <article class="washer overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/washer/washer_3.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Washer Repairs</h3>
+                </div>
+            </article>
+            <article class="washer main overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/washer/washer_4.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Washer Repairs</h3>
+                </div>
+            </article>
+            <article class="washer overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/washer/washer_5.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Washer Repairs</h3>
+                </div>
+            </article>
+            <article class="washer main overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/washer/washer_6.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Washer Repairs</h3>
+                </div>
+            </article>
+
+            <article class="dishwasher overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/dishwasher/dishwasher_1.jpeg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Dishwasher Repairs</h3>
+                </div>
+            </article>
+            <article class="dishwasher overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/dishwasher/dishwasher_2.jpeg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Dishwasher Repairs</h3>
+                </div>
+            </article>
+            <article class="dishwasher overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/dishwasher/dishwasher_3.jpeg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Dishwasher Repairs</h3>
+                </div>
+            </article>
+
+            <article class="microwave overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/microwave/microwave_2.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Microwave Repairs</h3>
+                </div>
+            </article>
+            <article class="microwave overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/microwave/microwave_1.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Microwave Repairs</h3>
+                </div>
+            </article>
+            <article class="microwave overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/microwave/microwave_3.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Microwave Repairs</h3>
+                </div>
+            </article>
+            <article class="microwave overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/microwave/microwave_4.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Microwave Repairs</h3>
+                </div>
+            </article>
+            
+            
+            <article class="refrigerator overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/refrigerator/refrigerator_1.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Refrigerator Repairs</h3>
+                </div>
+            </article> 
+            <article class="refrigerator overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/refrigerator/refrigerator_2.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Refrigerator Repairs</h3>
+                </div>
+            </article> 
+            <article class="refrigerator overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/refrigerator/refrigerator_3.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Refrigerator Repairs</h3>
+                </div>
+            </article> 
+            <article class="refrigerator overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/refrigerator/refrigerator_4.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Refrigerator Repairs</h3>
+                </div>
+            </article> 
+            <article class="refrigerator overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/refrigerator/refrigerator_5.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Refrigerator Repairs</h3>
+                </div>
+            </article> 
+            <article class="refrigerator overlay-outer">
+                <div class="overlay-inner"></div>
+                <img src="{% static 'images/projects/refrigerator/refrigerator_6.jpg' %}"
+                    class="img-work w-100" />
+                <div class="content-details fadeIn_bottom">
+                    <h3 class="content-title">Refrigerator Repairs</h3>
+                </div>
+            </article>
+
+
+        </section>
+    </div>
+</div>
+
+<div class="review-section w-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+    <div class="container-fluid">
+        <div class="row d-flex flex-column align-items-center justify-content-center text-center review-header pt-2">
+            <h6 class="mt-5">CLIENT REVIEWS</h6>
+            <h1 class="mb-3">What People & Clients Think About Us?</h1>
+            <p>Every customer's opinion is important to us. Thank you for taking the time to share your review with us.
+            </p>
+        </div>
+       <div id="owl-demo1" class="owl-carousel owl-theme mt-4">
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Zarwaki Dugar</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">100% satisfied. Very prompt, technician came the same day I called and at
+                        the time
+                        indicated. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Elchin Verdiyev</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Excellent service , definitely recommended 👍👍👍 </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Umid Mammadli</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Very professional staff! Responsive and kind customer service! Fixed my
+                        Fridge and it
+                        is like new again!
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Muzaffer Kharayev</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Good customer service, and maintance service.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Mehdi Huseynzade</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Great service. I invited their technicians twice. Once for the dryer and
+                        second time
+                        for the fridge. He was on-time, honest, good personality and he cleaned them after himself.
+                        Highly recommended.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Derya Bozkurt</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Great service by Ambulance Appliance. They arrived on time and found the
+                        problem quickly. They fixed my fridge for a reasonable price. I definitely recommend them.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Gunel Huseynova</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">they provided a good service. very friendly team
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Gambar Oruj </h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Fridge seems to be out due to power fluctuations this morning. Nothing I
+                        tried worked. Put an emergency request in and received a call within minutes.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Asger Hajiyev </h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">The technician showed up early on Saturday morning and diagnosed the
+                        problem quickly. Bad compressor on refrigerator. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="details">
+                        <h4>Stevie Blight</h4>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info" class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+             <div class="item">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1612428978260-2b9c7df20150?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                        alt="Image">
+                    <div class="details">
+                        <h2>Stevie Blight</h2>
+                        <p>Director</p>
+                        <ul class="d-flex align-items-center justify-content-between stars">
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>  
+         </div> 
+    </div>
+
+</div>
+
+<div class="partner-section w-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-md-3 d-flex align-items-center partner-text">
+                <span>Brands We Repair:</span>
+            </div>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <div id="owl-demo2" class="owl-carousel owl-theme mt-4">
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/1.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img class="w-100"
+                                src="{% static 'images/brands/2.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container  mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/3.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/4.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/5.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/6.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/7.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/8.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/9.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/10.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/11.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/12.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/13.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/14.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/15.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/16.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/17.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/18.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/19.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/20.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="item py-3">
+                        <div class="flex-container mb-4">
+                            <div> <img
+                                src="{% static 'images/brands/21.png' %}"
+                                alt=""></div>
+                        </div>
+                        <div class="flex-container">
+                            <div> <img
+                                src="{% static 'images/brands/22.png' %}"
+                                alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block js %}
+<script src="{% static 'js/filter.js' %}"></script>
+{% endblock %}
+
+<!--Endblock-->

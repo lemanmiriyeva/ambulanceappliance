@@ -1,0 +1,126 @@
+.title-divider {
+    width: 20%;
+    border: 2px solid #ff5316;
+    height: 2px;
+    background-color: #ff5316;
+}
+.title-section{
+    background-image: url("https://templatekit.kulokale.com/plumbtion/wp-content/uploads/sites/7/2022/01/bryan-colosky-3ChXTytXDUI-unsplash-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff !important;
+    opacity: 1;
+}
+.title-section .overlay{
+    background-color:  rgba(18, 27, 43, .9);
+    
+}
+
+
+
+.about-image img{
+
+    object-fit: cover;
+
+}
+.about-image img {
+    height: 350px;
+    
+}
+
+
+.about-image h6 {
+    color: #ff5316;
+}
+
+.about-image h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #192437;
+}
+
+.about-header-text p {
+    color: #727272;
+}
+
+
+
+@media(max-width:576px) {
+    .about-image h1 {
+        font-size: 30px !important;
+    }
+}
+
+@media(max-width:768px) {
+   
+    .about-image img {
+        height: 300px !important;
+    }
+
+    .about-image {
+        margin-bottom: 10%;
+    }
+}
+@media(max-width:1024px){
+    .about-header-text{
+        margin-top: 3%;
+    }
+}
+@media(max-width:1024px){
+    .team-card{
+        width: 100% !important;
+    }
+}
+.team-card > .card-body{
+    background-color: #192437 !important;
+}
+.team-card h2{
+    color: #fff !important;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.team-card p{
+    color: #ff5316 !important;
+    text-align: center;
+    font-size: 18px;
+}
+.our-team-section h6 {
+    color: #ff5316;
+}
+
+.our-team-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #192437;
+}
+
+
+
+.header-text4 h6 {
+    color: #ff5316;
+}
+
+.about-us-section i{
+    font-size: 38px;
+    vertical-align: middle; 
+    color: #ff5316 !important;
+}
+
+.header-text4 p {
+    color: #727272;
+    font-size: 18px !important;
+}
+
+.about-image h5 {
+    color: #192437;
+    margin-left: 5%;
+    font-weight: 500;
+}
+
+
+@media(max-width:991px){
+    .title-section{
+        margin-top: 10% !important;
+    }
+}

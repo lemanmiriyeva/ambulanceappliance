@@ -1,0 +1,105 @@
+.title-divider {
+    width: 20%;
+    border: 2px solid red;
+    height: 2px;
+    background-color: red;
+}
+
+.title-section {
+    background-image: url("https://templatekit.kulokale.com/plumbtion/wp-content/uploads/sites/7/2022/01/bryan-colosky-3ChXTytXDUI-unsplash-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff !important;
+    opacity: 1;
+}
+
+.title-section .overlay {
+    background-color: rgba(18, 27, 43, .9);
+
+}
+
+
+.service-header-text {
+    color: #727272;
+}
+
+
+.about-image img,
+.why-image img {
+
+    object-fit: cover;
+
+}
+
+.why-image img {
+    height: 500px;
+}
+
+
+.why-section {
+    background-color: #192437;
+}
+
+.header-text2 h6 {
+    color: #ff5316;
+}
+
+.header-text2 h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+}
+
+.header-text2 p {
+    color: #fff;
+}
+
+.header-text2 h3 {
+    color: #fff;
+    margin-left: 10%;
+}
+
+.header-text2 h4 {
+    color: #fff;
+}
+
+.header-text2 img {
+    width: 70px;
+    height: 70px;
+}
+
+.more {
+    color: #ff5316 !important;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.more i {
+    font-size: 20px !important;
+    margin-left: 6px;
+}
+
+@media(max-width:576px) {
+    .header-text2 h1 {
+        font-size: 30px !important;
+    }
+}
+
+@media(max-width:768px) {
+    .why-image img {
+        height: 400px !important;
+    }
+
+    .why-image {
+        margin-bottom: 10%;
+    }
+}
+.why-section i{
+    color: #ff5316;
+    font-size: 42px;
+}
+@media(max-width:991px){
+    .title-section{
+        margin-top: 10% !important;
+    }
+}
