@@ -171,160 +171,26 @@
 
         </div>
         <div class="row py-4">
-            
+            {% for service in services %}
             <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="service-card service-overlay-outer w-100">
                     <div class="service-overlay-inner">
                         <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
                             <img class="mb-3" src="{% static 'images/icons/refrigerator.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Refrigerator</h4>
+                            <h4 class="text-center text-white">{{service.title}}</h4>
                         </div>
                     </div>
                     <img src="{% static 'images/services/refrigerator.webp' %}"
                         class="img-service" />
                         <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
                             <img class="mb-3" src="{% static 'images/icons/refrigerator.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Refrigerator</h4>
+                            <h4 class="text-center text-white">{{service.title}}</h4>
                         </div>
                         
                 </div>
             </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/ice-machine.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Ice Machine</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/ice-machine.jpeg' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail  " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/ice-machine.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Ice Machine</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/washer.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Washer</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/washer.jpg' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/washer.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Washer</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/dryer.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Dryer</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/dryer.webp' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/dryer.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Dryer</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/dishwasher.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Dishwasher</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/dishwasher.jpg' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/dishwasher.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Dishwasher</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/oven.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Oven</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/oven.jpg' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100  overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/oven.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Oven</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100 overlay-detail  " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/cooktop.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Cooktop</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/cooktop.jpg' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail  " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/cooktop.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Cooktop</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100 overlay-detail  " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/microwave.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Microwave</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/microwave.jpg' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail  " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/microwave.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Microwave</h4>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-5 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="service-card service-overlay-outer w-100">
-                    <div class="service-overlay-inner">
-                        <div class="d-flex align-items-center flex-column justify-content-center w-100 overlay-detail  " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/minibar.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Wine Cooler</h4>
-                        </div>
-                    </div>
-                    <img src="{% static 'images/services/wine-cooler.png' %}"
-                        class="img-service" />
-                        <div class="d-flex flex-column align-items-center justify-content-center w-100 overlay-detail " style="height: 250px;">
-                            <img class="mb-3" src="{% static 'images/icons/minibar.png' %}" style="width: 44px;height: 44px;" alt="">
-                            <h4 class="text-center text-white">Wine Cooler</h4>
-                        </div>
-                        
-                </div>
-            </div>
+            {% endfor %}
+           
             
             
 
@@ -384,188 +250,16 @@
 
         <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid" data-aos="fade-down"
             data-aos-easing="linear" data-aos-duration="1000" style="background-color: transparent !important;">
-
-            <article class="cooktop main overlay-outer">
+        {% for work in works %}
+            <article class="{{work.filter}} overlay-outer">
                 <div class="overlay-inner"></div>
                 <img src="{% static 'images/projects/cooktop/cooktop.jpg' %}"
                     class="img-work w-100" />
                 <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Cooktop Repairs</h3>
+                    <h3 class="content-title">{{ work.title }}</h3>
                 </div>
             </article>
-            <article class="cooktop overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/cooktop/cooktop_2.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Cooktop Repairs</h3>
-                </div>
-            </article>
-            <article class="cooktop emergency overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/cooktop/cooktop_3.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Cooktop Repairs</h3>
-                </div>
-            </article>
-
-            <article class="washer overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/washer/washer_1.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Washer Repairs</h3>
-                </div>
-            </article>
-            <article class="washer overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/washer/washer_2.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Washer Repairs</h3>
-                </div>
-            </article>
-            <article class="washer overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/washer/washer_3.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Washer Repairs</h3>
-                </div>
-            </article>
-            <article class="washer main overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/washer/washer_4.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Washer Repairs</h3>
-                </div>
-            </article>
-            <article class="washer overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/washer/washer_5.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Washer Repairs</h3>
-                </div>
-            </article>
-            <article class="washer main overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/washer/washer_6.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Washer Repairs</h3>
-                </div>
-            </article>
-
-            <article class="dishwasher overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/dishwasher/dishwasher_1.jpeg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Dishwasher Repairs</h3>
-                </div>
-            </article>
-            <article class="dishwasher overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/dishwasher/dishwasher_2.jpeg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Dishwasher Repairs</h3>
-                </div>
-            </article>
-            <article class="dishwasher overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/dishwasher/dishwasher_3.jpeg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Dishwasher Repairs</h3>
-                </div>
-            </article>
-
-            <article class="microwave overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/microwave/microwave_2.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Microwave Repairs</h3>
-                </div>
-            </article>
-            <article class="microwave overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/microwave/microwave_1.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Microwave Repairs</h3>
-                </div>
-            </article>
-            <article class="microwave overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/microwave/microwave_3.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Microwave Repairs</h3>
-                </div>
-            </article>
-            <article class="microwave overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/microwave/microwave_4.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Microwave Repairs</h3>
-                </div>
-            </article>
-            
-            
-            <article class="refrigerator overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/refrigerator/refrigerator_1.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Refrigerator Repairs</h3>
-                </div>
-            </article> 
-            <article class="refrigerator overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/refrigerator/refrigerator_2.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Refrigerator Repairs</h3>
-                </div>
-            </article> 
-            <article class="refrigerator overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/refrigerator/refrigerator_3.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Refrigerator Repairs</h3>
-                </div>
-            </article> 
-            <article class="refrigerator overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/refrigerator/refrigerator_4.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Refrigerator Repairs</h3>
-                </div>
-            </article> 
-            <article class="refrigerator overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/refrigerator/refrigerator_5.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Refrigerator Repairs</h3>
-                </div>
-            </article> 
-            <article class="refrigerator overlay-outer">
-                <div class="overlay-inner"></div>
-                <img src="{% static 'images/projects/refrigerator/refrigerator_6.jpg' %}"
-                    class="img-work w-100" />
-                <div class="content-details fadeIn_bottom">
-                    <h3 class="content-title">Refrigerator Repairs</h3>
-                </div>
-            </article>
+          {% endfor %}
 
 
         </section>

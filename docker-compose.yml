@@ -1,24 +1,18 @@
-version: "3.1"
-   
-services:
+version: '3.1'
 
-  db:
+services:
+  postgres:
+    container_name: postgres
     image: postgres
     restart: always
     ports:
-      - 5432:5432
+      - 5432:5433
     volumes:
       - ./postgresdb:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=ambulance
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=123
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      [8080:8080]
-    
-
-  
+      # - LC_ALL=C.UTF-8
+      POSTGRES_DB: 'postgres'
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 123
+      POSTGRES_HOST: 'localhost'
+      POSTGRES_PORT: 5432
