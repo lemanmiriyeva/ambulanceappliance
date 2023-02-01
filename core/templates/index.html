@@ -135,15 +135,13 @@
             </div>
             <div class="col-md-9 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 header-text-about">
                 <h6 class="mb-4">ABOUT US</h6>
-                <p class="mb-4">Our highly qualified service technicians will diagnose your problem quickly. Once we
-                    know your problem, we can often repair it during the initial visit. In the unfortunate case that we
-                    need to order a part or parts, we will place that order same-day and schedule a return trip for
-                    repair. </p>
-                <p>
-                    We have been providing top service! See just how our Ambulance Appliance Repair Service can better
-                    your life today!
+                {% for about in abouts %}
+                <p class="mb-4">
+                    {{about.small_desc}}
                 </p>
+                
                 <a href="" class="btn btn-more mb-4 py-3 px-4">Learn more</a>
+                {% endfor %}
                 </h4>
             </div>
         </div>

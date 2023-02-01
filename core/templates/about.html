@@ -39,10 +39,11 @@
 <div class="about-us-section w-100">
     <div class="container-fluid py-5 about" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
         <div class="row pb-5 d-flex about-row d-flex justify-content-between align-items-center">
+            {% for about in abouts %}
             <div
                 class="col-md-12 col-sm-10 col-12 col-lg-6 col-xl-6 col-xxl-6 about-image d-flex flex-column justify-content-center">
                 <h6 class="mb-4">OUR WORK PROCESS</h6>
-                <h1 class="mb-4">We Provide The Best Process Experience</h1>
+                <h1 class="mb-4">{{about.title}}</h1>
                 <img class="w-100 d-none"
                     src="https://templatekit.kulokale.com/plumbtion/wp-content/uploads/sites/7/elementor/thumbs/smiling-male-plumber-in-uniform-holds-drain-pipe-resize-pipnelaqrotunyyrfd6foso03i9l60oeg27uaff21c.jpg"
                     alt="">
@@ -66,15 +67,14 @@
                         </div>
                     </div>
             </div>
+            
             <div class="col-md-12 col-12 col-sm-12 col-lg-6 col-xl-5 col-xxl-5 header-text4">
-                <p class="mb-4">Our highly qualified service technicians will diagnose your problem quickly. Once we know your problem, we can often repair it during the initial visit. In the unfortunate case that we need to order a part or parts, we will place that order same-day and schedule a return trip for repair.
-                </p>
-                <p class="mb-4">We can offer this because our techs are the best in town. The warranty covers for labor and for parts we honor the manufacturers warranty. This warranty is why so many customers across to Ambulance Appliance repair service, Our business model is built on respect, promptness, honesty, and taking pride in our work.
-                </p>
+                <p class="mb-4">{{about.large_desc}}</p>
                 
 
 
             </div>
+            {% endfor %}
 
         </div>
 

@@ -74,30 +74,9 @@
             </div>
             <div class="col-md-7 col-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 contact-form pt-5 mt-5">
                 
-                <form action="" method="post">
-                    <div class="row">
-                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
-                            <label for="first_name" class="mb-2">First Name</label>
-                            
-                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your name" type="text">
-                        </div>
-                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
-                            <label for="first_name" class="mb-2">Last Name</label>
-                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your last name" type="text">
-                        </div>
-                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
-                            <label for="first_name" class="mb-2">Email Address</label>
-                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your email" type="text">
-                        </div>
-                        <div class="col-md-6 col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
-                            <label for="first_name" class="mb-2">Phone Number</label>
-                            <input name="first_name" class="w-100 py-3 px-3  form-control" placeholder="Your phone number" type="text">
-                        </div>
-                    </div>
-                    <label for="textarea" class="mb-2">Message</label>
-                    <textarea name="textarea" id="" cols="30" rows="7" class="py-3 px-3 mb-4 w-100 form-control"
-                                placeholder="Your Message"></textarea>
-
+                <form action="{% url 'contact' %}" method="post">
+                    {% csrf_token %}
+                     {{form}}
                     <button type="submit" class="btn btn-send py-3 px-5">Send message</button>
                 </form>
             </div>
