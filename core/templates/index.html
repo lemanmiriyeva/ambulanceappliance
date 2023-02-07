@@ -54,12 +54,16 @@
             </div>
             <div class="col-md-7 col-10 col-sm-7 col-lg-4 col-xl-4 col-xxl-4 form-div py-5 px-4" style="height: 620px;">
                 <h3 class="mb-3">Get Free Quote</h3>
-               <form action="" method="post" style="height: 500px;" class="w-100 d-flex align-items-center justify-content-between flex-column">                
-                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-name" placeholder="Name">
+               <form action="" method="post" style="height: 500px;" class="w-100 d-flex align-items-center justify-content-between flex-column">
+                {% csrf_token %}                
+                <!-- <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-name" placeholder="Name">
                 <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-phone" placeholder="Phone">
                 <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-email" placeholder="Email">
                 <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-address" placeholder="Adress">
-                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-zipcode" placeholder="Zip Code">
+                <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-zipcode" placeholder="Zip Code"> -->
+                {% for field in form %}
+                {{field}}
+                {% endfor %}
                 <button id="contact-form-button" class="btn btn-success w-100 py-2" type="submit">Get a quote</button>
                </form>
 

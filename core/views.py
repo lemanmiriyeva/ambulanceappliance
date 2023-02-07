@@ -1,7 +1,9 @@
-from django.shortcuts import render
-from django.views.generic import ListView
+from django.shortcuts import render,redirect
+from django.views.generic import ListView,FormView
+from django.urls import reverse_lazy
 from .models import *
- 
+from .forms import *
+
 #Functional view
 # def home(request):
 #     context ={}
@@ -13,15 +15,27 @@ from .models import *
          
 #     return render(request, "index.html", context)
 
-class HomeView(ListView):
+class HomeView(ListView,FormView):
     model=Service
     template_name="index.html"
+    form_class=QuoteForm
+    
+    def get_success_url(self):
+        return self.request.path
+
+
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.save()
+        return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
         context=super().get_context_data(**kwargs)
         context['services']=Service.objects.all()
         context['works']=Works.objects.all()
         context['abouts']=About.objects.all()
+        
         return context
 
 #Functional view
@@ -38,4 +52,16 @@ class AboutView(ListView):
 
 
 def contact(request):
-    return render(request,'contact.html')
+    form=ContactForm()
+    print(request.POST)
+    if request.method == 'POST':
+        form=ContactForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse_lazy("home"))
+    context={
+        'form':form
+    }
+
+    return render(request,'contact.html',context)
+
