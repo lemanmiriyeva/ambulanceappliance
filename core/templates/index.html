@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% load i18n %}
 {% block title %}
 <title>Ambulance Appliance - Best Repair Services</title>
 {% endblock %}
@@ -35,7 +35,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-center">
         <div class="row main-row d-flex align-items-center justify-content-between">
             <div class="col-md-11 col-12 col-sm-11 col-lg-8 col-xl-8 col-xxl-7 header-text-main">
-                <h1 class="mb-4">Best Appliance Repair Solution with Quality Work</h1>
+                <h1 class="mb-4">{% trans 'Best Appliance Repair Solution with Quality Work' %}</h1>
                 <a href="tel:(832) 856-3222" class="btn btn-more mb-4 py-3 px-4">CALL US NOW</a>
                 <div class="top-services d-flex align-items-center justify-content-start mt-5 w-100">
                     <div class="d-flex align-items-center justify-content-start" style="border-radius: 10px;width: 20%;margin-right: 10px;">
@@ -53,7 +53,7 @@
           
             </div>
             <div class="col-md-7 col-10 col-sm-7 col-lg-4 col-xl-4 col-xxl-4 form-div py-5 px-4" style="height: 620px;">
-                <h3 class="mb-3">Get Free Quote</h3>
+                <h3 class="mb-3">{% trans 'Get Free Quote' %}</h3>
                <form action="" method="post" style="height: 500px;" class="w-100 d-flex align-items-center justify-content-between flex-column">
                 {% csrf_token %}                
                 <!-- <input type="text" class="form-control px-3 py-3 mb-3" id="contact-form-name" placeholder="Name">

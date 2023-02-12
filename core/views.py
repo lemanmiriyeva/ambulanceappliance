@@ -65,3 +65,6 @@ def contact(request):
 
     return render(request,'contact.html',context)
 
+class LoginView(ListView):
+    model=About
+    template_name="login.html"

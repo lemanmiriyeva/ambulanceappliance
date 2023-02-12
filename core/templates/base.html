@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 <!--SAME ALL PAGES-->
 
 <!DOCTYPE html>
@@ -104,16 +104,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{% url 'home' %}">HOME</a>
+                    <a class="nav-link" aria-current="page" href="{% url 'home' %}">{% trans 'Home' %}</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link" href="">ABOUT US</a>
+                    <a class="nav-link" href="{% url 'about' %}">{% trans 'About us' %}</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link" href="#services">SERVICES</a>
+                    <a class="nav-link" href="#services">{% trans 'Services' %}</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link" href="">CONTACT</a>
+                    <a class="nav-link" href="{% url 'contact' %}">{% trans 'Contact' %}</a>
+                </li>
+                <li class="nav-item ">
+                    <form action="{% url 'set_language' %}" method="post"> 
+                        {% csrf_token %}  
+                        <select onchange="this.form.submit()" name="language" class="form-select">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}  
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                    {{ language.name_local }} ({{ language.code }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </form>
                 </li>
 
 
