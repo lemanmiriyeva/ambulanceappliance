@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Contact</title>
+{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'css/top-header.css' %}">
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<main class="main mt-5">
+	<div class="container-fluid">
+		<section class="wrapper">
+			<div class="heading">
+				<h1 class="text text-large">Sign In</h1>
+				<p class="text text-normal">New user? <span><a href="{% url 'register' %}" class="text text-links">Create an account</a></span>
+				</p>
+			</div>
+			<!-- <form name="signin" class="form">
+				<div class="input-control">
+					<label for="email" class="input-label" hidden>Email Address</label>
+					<input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+				</div>
+				<div class="input-control">
+					<label for="password" class="input-label" hidden>Password</label>
+					<input type="password" name="password" id="password" class="input-field" placeholder="Password">
+				</div>
+				<div class="input-control">
+					<a href="#" class="text text-links">Forgot Password</a>
+					<input type="submit" name="submit" class="input-submit" value="Sign In" disabled>
+				</div>
+			</form>
+			<div class="striped">
+				<span class="striped-line"></span>
+				<span class="striped-text">Or</span>
+				<span class="striped-line"></span>
+			</div>
+			<div class="method">
+				<div class="method-control">
+					<a href="#" class="method-action">
+						<i class="fa fa-google"></i>
+						<span>Sign in with Google</span>
+					</a>
+				</div>
+				<div class="method-control">
+					<a href="#" class="method-action">
+						<i class="fa fa-facebook"></i>
+						<span>Sign in with Facebook</span>
+					</a>
+				</div>
+				<div class="method-control">
+					<a href="#" class="method-action">
+						<i class="fa fa-apple"></i>
+						<span>Sign in with Apple</span>
+					</a>
+				</div>
+			</div> -->
+
+			<form action="{% url 'login' %}" method="post">
+				{% csrf_token %}
+				<ul class="row">
+					{%for field in form%}
+					<li class="col-md-12">
+						{{field}}
+					</li>
+					{% endfor %}
+				</ul>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+	</div>
+</main>
+
+
+
+
+{% endblock %}
+
+
+
+
+{% block js %}
+
+<script src="{% static 'js/filter.js' %}"></script>
+
+{% endblock %}
