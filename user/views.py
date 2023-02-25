@@ -31,3 +31,8 @@ class LoginView(LoginView):
 def logout(request):
     logout(request)
     return redirect(reverse_lazy("login"))
+
+
+def social_login(request):
+    
+    return render(request,'social_login.html')

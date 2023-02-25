@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'user'
+    'user',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -51,8 +52,21 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.facebook.FacebookOAuth2', # facebook <----
+    'social_core.backends.google.GoogleOAuth2',  # google <----
+    'django.contrib.auth.backends.ModelBackend',
+)
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '605824085083-u4nbg6d79a2a7e3jep8pmt6g9orn6gj5.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+
+
+
+SOCIAL_AUTH_FACEBOOK_KEY = '695205209014222'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '81eb954595c18214c33b3b99dbc5ffee'  # App Secret
 ROOT_URLCONF = 'ambulanceappliance.urls'
 
 TEMPLATES = [
@@ -66,6 +80,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',  
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -84,7 +100,7 @@ DATABASES = {
     }
 }
 
-
+LOGIN_REDIRECT_URL = 'home' 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 

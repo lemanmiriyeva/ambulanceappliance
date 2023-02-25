@@ -60,6 +60,10 @@
 				{% endfor %}
 			</ul>
 			<button type="submit">Submit</button>
+			<div class="  bg-white ">
+				<a class="btn btn-light" href="{% url 'social:begin' 'facebook' %}"><i class="fa fa-facebook"></i>&nbsp;Login</a>
+				   <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}"> <i class="fa fa-google"></i>&nbsp;Login</a>
+			 </div>
 		</form>
 		</section>
 	</div>
