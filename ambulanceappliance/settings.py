@@ -56,9 +56,9 @@ MIDDLEWARE = [
 ]
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.facebook.FacebookOAuth2', # facebook <----
-    'social_core.backends.google.GoogleOAuth2',  # google <----
     'django.contrib.auth.backends.ModelBackend',
+    # 'social_core.backends.facebook.FacebookOAuth2', # facebook <----
+    # 'social_core.backends.google.GoogleOAuth2',  # google <----
 )
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '605824085083-u4nbg6d79a2a7e3jep8pmt6g9orn6gj5.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
@@ -152,3 +152,10 @@ STATICFILES_DIRS= [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'muxtarli.sevda@gmail.com'
+EMAIL_HOST_PASSWORD = 'ulxhfwxbdvqmbbgm'
