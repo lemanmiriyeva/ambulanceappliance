@@ -16,7 +16,9 @@ from django.template.loader import render_to_string
 from .tokens import account_activation_token  
 from django.contrib.auth.models import User  
 from django.core.mail import EmailMessage  
-  
+from django.contrib.messages.views import SuccessMessageMixin
+
+from django.contrib.auth.views import PasswordResetView  
 
 # Create your views here.
 
@@ -28,6 +30,18 @@ from django.core.mail import EmailMessage
 #     def form_valid(self,form):
 #         result=super().form_valid(form)
 #         return result
+
+class ResetPasswordView(SuccessMessageMixin,PasswordResetView):
+    template_name="password_reset.html"
+    email_template_name="password_reset_email.html"
+    subject_template_name="password_reset_subject.txt"
+    success_message="We've emailed you instructions for setting your password," \
+    "if an account exists with email you entered.You should receive thm shortly."\
+    "if you dont receive an email"\
+    "please make sure you've entered the address you registered with,and check your spam folder."
+    success_url=reverse_lazy("home")
+    
+
 
 
 def register(request):  
