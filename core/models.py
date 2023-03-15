@@ -16,7 +16,7 @@ class Quotes(models.Model):
 
 class About(models.Model):
     image=models.ImageField()
-    title=models.CharField(max_length=255)
+    title=models.CharField(max_length=255,null=True,blank=True)
     small_desc=models.CharField(max_length=255)
     large_desc=models.CharField(max_length=255)
     class Meta:
@@ -29,7 +29,7 @@ class About(models.Model):
 class Service(models.Model):
     image=models.ImageField()
     icon=models.ImageField()
-    title=models.CharField(max_length=255)
+    title=models.CharField(max_length=255,null=True,blank=True)
     class Meta:
         verbose_name='Service'
         verbose_name_plural='Services'
