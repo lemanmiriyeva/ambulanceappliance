@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-v^(55)29f$hy3%tn2b6h_8#fjcd--fx*)5ceflz!f^x*%pkc46
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'social_django.middleware.SocialAuthExceptionMiddleware',
+    'ambulanceappliance.middlewares.black_list_ip_middleware.BlackListIPMiddleware',
 ]
 
 AUTHENTICATION_BACKENDS = (
