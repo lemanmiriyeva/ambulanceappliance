@@ -4,8 +4,8 @@ from django.core.exceptions import PermissionDenied
 class BlackListIPMiddleware(MiddlewareMixin):
 
     BLACK_LIST_IP=[
-        '127.0.0.1',
-        '192.168.10.247'
+        # '127.0.0.1',
+        # '192.168.10.247'
     ]
 
     def process_request(self,request):
