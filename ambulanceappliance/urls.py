@@ -27,5 +27,6 @@ urlpatterns += i18n_patterns(
     path('', include('core.urls')),
     path('', include('user.urls')),
     path('api/',include('core.api.urls')),
+    path('api/',include('user.api.urls')),
    
 )
