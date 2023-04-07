@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'user',
     'social_django',
     'rest_framework',
+    'django_filters',
 ]
+REST_FRAMEWORK={
+    'DEFAULT_FILTER_BACKENDS':['django_filters.rest_framework.DjangoFilterBackend']
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
