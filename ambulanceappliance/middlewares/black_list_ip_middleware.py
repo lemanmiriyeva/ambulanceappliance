@@ -5,6 +5,7 @@ class BlackListIPMiddleware(MiddlewareMixin):
 
     BLACK_LIST_IP=[
         # '127.0.0.1',
+        # '127.0.0.1',
         # '192.168.10.247'
     ]
 
